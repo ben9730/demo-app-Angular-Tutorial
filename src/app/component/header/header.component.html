@@ -1,0 +1,9 @@
+<header>
+  <h1>{{ title }}</h1>
+  <!-- how to pass data to competent -->
+  <app-button
+    color="{{showAddTask ? 'red': 'green'}}"
+    text="{{showAddTask ? 'Close': 'Add'}}"
+    (btnClick)="toggleAddTask()"
+  ></app-button>
+</header>
